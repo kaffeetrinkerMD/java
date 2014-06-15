@@ -64,7 +64,8 @@ public class Kunde {
 	/**
 	 * Gibt alle in der HashMap 'auftraege' registrierten Objekte (Aufträge) zurück<br>
 	 * @return s <b>String</b> String-Objekt mit allen in der HashMap 'auftraege' registrierten Objekten (Aufträgen)
-	 * @author Dozent S.Bauer  
+	 * @author Dozent S.Bauer
+	 * @author kaffeetrinkerMD (modifiziert)
 	 */
 	@Override
 	public String toString( ){
