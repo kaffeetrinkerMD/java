@@ -1,7 +1,7 @@
 package de.klusoft.fabriksingleton;
 
 
-public class fbsingletonMain {
+public class FabSingletonMain {
 
     public static void main( String[] args ) {
 
