@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class DebugKompositum extends Debugger {
 
     private ArrayList<Debugger> debugger = new ArrayList<>();
-    private int debID = 0;
     
     @Override
     public void debug( String nachricht ) {
