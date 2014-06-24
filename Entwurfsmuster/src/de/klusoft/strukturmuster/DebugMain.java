@@ -23,9 +23,9 @@ public class DebugMain {
 	kompositum.addDebugger( debMail );
 	kompositum.addDebugger( debSMS );
 	
-	kompSchachtel.addDebugger( debLog );
-	kompSchachtel.addDebugger( debMail );
-	kompSchachtel.addDebugger( debSMS );
+	kompSchachtel.addDebugger( kompositum );
+	//kompSchachtel.addDebugger( debMail );
+	//kompSchachtel.addDebugger( debSMS );
 	
 	//kompositum.debug( nachricht );
 	kompSchachtel.debug( na1 );
