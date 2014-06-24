@@ -1,7 +1,7 @@
 package de.klusoft.adapter;
 
 /**
- * Klasse verwaltet Automobile (Assoziaktion: unidirektional)
+ * Klasse verwaltet Automobile (Assoziation: unidirektional)
  * @author benutzer
  *
  */
