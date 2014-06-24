@@ -8,7 +8,7 @@ package de.klusoft.adapter;
 public class AutoAdapter implements Vehicle {
 
     // Reference auf ein Objekt der Klasse Automobile
-    Automobile autoMobil = null;
+    protected Automobile autoMobil = null;
     
     public AutoAdapter(Automobile am) {
 	this.autoMobil = am;
