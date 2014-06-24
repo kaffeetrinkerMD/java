@@ -9,6 +9,7 @@ public class DebugMain {
 	String trenner = "*** neuer Testbereich ***";
 	
 	DebugKompositum kompositum = new DebugKompositum();
+	DebugKompositum kompSchachtel = new DebugKompositum();
 	
 	DebugLog debLog = new DebugLog();
 	
@@ -20,13 +21,18 @@ public class DebugMain {
 	kompositum.addDebugger( debMail );
 	kompositum.addDebugger( debSMS );
 	
-	kompositum.debug( nachricht );
+	kompSchachtel.addDebugger( debLog );
+	kompSchachtel.addDebugger( debMail );
+	kompSchachtel.addDebugger( debSMS );
 	
-	kompositum.removeDebugger( debMail );
+	//kompositum.debug( nachricht );
+	kompSchachtel.debug( nachricht );
+	
+	kompSchachtel.removeDebugger( debMail );
 	
 	System.out.println( trenner );
 	
-	kompositum.debug( nachricht );
+	kompSchachtel.debug( nachricht );
     }
 
 }
