@@ -5,7 +5,9 @@ public class DebugMain {
 
     public static void main( String[] args ) {
 
-	String nachricht = "Java macht Spaß!";
+	String na1 = "Java macht Spaß!";
+	String na2 = "der Mail-Debugger fehlt!";
+	
 	String trenner = "*** neuer Testbereich ***";
 	
 	DebugKompositum kompositum = new DebugKompositum();
@@ -26,13 +28,13 @@ public class DebugMain {
 	kompSchachtel.addDebugger( debSMS );
 	
 	//kompositum.debug( nachricht );
-	kompSchachtel.debug( nachricht );
+	kompSchachtel.debug( na1 );
 	
 	kompSchachtel.removeDebugger( debMail );
 	
 	System.out.println( trenner );
 	
-	kompSchachtel.debug( nachricht );
+	kompSchachtel.debug( na2 );
     }
 
 }
