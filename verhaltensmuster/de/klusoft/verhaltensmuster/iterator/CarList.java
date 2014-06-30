@@ -19,11 +19,12 @@ public class CarList implements Iterierbar{
 	// Öffnen der CSV-Datei (u.U. wird eine IO-Exception geworfen)
 
 	// (1) Pfadangabe bestimmen
-	Path cwd = Paths.get( "" ); // das aktuelle Arbeitsverzeichnis bestimmen
+	Path cwd = Paths.get( ""); // das aktuelle Arbeitsverzeichnis bestimmen
 
+	System.out.println( cwd );
 	
 	// (2) Dateinamen erstllen/zusammenführen
-	String file = cwd.toAbsolutePath().toString() + "de/klusoft/verhaltensmuster/iterator" + filename;
+	String file = cwd.toAbsolutePath().toString() + "/de/klusoft/verhaltensmuster/iterator/" + filename;
 
 	// (3) Versuch, die Datei zu öffnen
 	try {
@@ -48,7 +49,7 @@ public class CarList implements Iterierbar{
 		this.cars[i] = new Car(daten[i][0], daten[i][1], Integer.valueOf(daten[i][2]));
 	    }
 	} catch(IOException e){
-	    System.out.println( "Konnte die Datei: " + filename + " nicht öffnen!" );
+	    System.out.println( "Konnte die Datei: " + file + " nicht öffnen!" );
 	}
 
     }
