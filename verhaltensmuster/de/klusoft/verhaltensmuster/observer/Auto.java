@@ -77,8 +77,7 @@ public class Auto implements Opfer, Vehicle {
     // Interceptor toString für die Ausgabe
     public String toString() {
 	
-	// TODO Rückgabewert überprüfen
-	return System.out.println();
+	return "Ich bitte um Rücksichtnahme";
     }
     
     public Integer getKilometerstand() {
