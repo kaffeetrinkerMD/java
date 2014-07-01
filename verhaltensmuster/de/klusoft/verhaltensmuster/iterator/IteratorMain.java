@@ -1,7 +1,7 @@
 package de.klusoft.verhaltensmuster.iterator;
 
 
-public class iteratorMain {
+public class IteratorMain {
 
     public static void main( String[] args ) {
 
