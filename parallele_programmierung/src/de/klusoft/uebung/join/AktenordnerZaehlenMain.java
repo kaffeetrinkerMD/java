@@ -12,8 +12,9 @@ public class AktenordnerZaehlenMain {
 	int a = 22;
 	
 	Chef chef = new Chef(r, a);
+	Thread tc = new Thread(chef);
 	
-	chef.run();
+	tc.start();
     }
 
 }
