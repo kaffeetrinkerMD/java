@@ -8,9 +8,9 @@ public class Angestellter implements Runnable {
     protected int anzahl = 0;
     
     // Konstruktor
-    public Angestellter() {
+    public Angestellter(int a) {
 	
-	this.anzahl = 11;
+	this.anzahl = a;
     }
     
     @Override

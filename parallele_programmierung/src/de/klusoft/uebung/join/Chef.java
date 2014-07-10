@@ -6,15 +6,16 @@ public class Chef implements Runnable {
     // Anzahl der Kellerräume
     // pro Kellerraum wird ein angestellter zum Zählen der darin befindlichen Aktenorder benötigt
     protected int anzahlRaeume = 0;
-    
+    protected int anzahlOrdner = 0;
     //	Gruppe deklarieren
     protected Angestellter [] gruppe = null;
     
     protected Thread [] th = null;
     
-    public Chef(int r) {
+    public Chef(int r, int a) {
 	
 	this.anzahlRaeume = r;
+	this.anzahlOrdner = a;
 	
 	// Gruppe der Angestellten erzeugen
 	this.gruppe = new Angestellter[this.anzahlRaeume];
@@ -24,7 +25,7 @@ public class Chef implements Runnable {
 	// alle Angestellten in die Gruppe aufnehmen
 	for(int i = 0; i < this.gruppe.length; i++) {
 	    
-	    this.gruppe[i] = new Angestellter();
+	    this.gruppe[i] = new Angestellter(this.anzahlOrdner);
 	    this.th[i] = new Thread(this.gruppe[i]);
 	}
     }
